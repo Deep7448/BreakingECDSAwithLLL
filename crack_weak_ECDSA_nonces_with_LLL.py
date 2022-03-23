@@ -36,6 +36,7 @@ def load_csv(filename):
       pubs.append(pub)
       n+=1
   return msgs,sigs,pubs
+  print(msgs,sigs,pubs)
 
 msgs,sigs,pubs = load_csv(filename)
 
