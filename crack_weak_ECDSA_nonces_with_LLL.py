@@ -36,9 +36,9 @@ def load_csv(filename):
       pubs.append(pub)
       n+=1
   return msgs,sigs,pubs
-  print(msgs,sigs,pubs)
-
+  
 msgs,sigs,pubs = load_csv(filename)
+print(msgs,sigs,pubs)
 
 msgn, rn, sn = [msgs[-1], sigs[-1][0], sigs[-1][1]]
 rnsn_inv = rn * modular_inv(sn, order)
